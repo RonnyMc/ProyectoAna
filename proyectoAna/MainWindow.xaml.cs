@@ -52,7 +52,18 @@ namespace proyectoAna
         private void Rec_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             //Reconoce las palabras que el usuario dice y las repite dependiendo de su diccionario de frases.
-            VozAna.Speak(e.Result.Text);
+            //VozAna.Speak(e.Result.Text);
+            switch (e.Result.Text)
+            {
+                case "hola":
+                    VozAna.Speak("Hola Ronny, ¿Como Esta el Dia de hoy?");
+                    break;
+                case "Inicia Google":
+                    VozAna.SpeakAsync("Iniciando google");
+                    System.Diagnostics.Process.Start("www.google.com");
+                    VozAna.Speak("google Iniciado");
+                    break;
+            }
         }
     }
 }
