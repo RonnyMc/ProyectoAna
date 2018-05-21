@@ -29,5 +29,30 @@ namespace proyectoAna
         {
             InitializeComponent();
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            //Capturar el sonido de la voz por la entrada por defecto del ordenador
+            rec.SetInputToDefaultAudioDevice();
+            //Reconoce las palabras que se le indica explicita como parametro en la funcion
+            Choices frases = new Choices(new string[] {"hola", "Como Estas", "Que haces", "gracias", "Inicia Google"});
+            //Funcion para construir la gramatica para el reconocedor y reproduccion de voz.
+            GrammarBuilder grammarBuilder = new GrammarBuilder();
+            //Se pasa el arreglo de frases creadas en choices y se adjunta al constructor de gramatica.
+            grammarBuilder.Append(frases);
+            Grammar grammar = new Grammar(grammarBuilder);
+            //El reconocedor cargara las gramaticas que hemos construido
+            rec.LoadGrammar(grammar);
+            //La sincronizacion del microfono con las palabras a decir siempre esta activa y escuchando.
+            rec.RecognizeAsync(RecognizeMode.Multiple);
+            //Reconoce el patron de frase hablado por el usuario y ejecuta una accion.
+            rec.SpeechRecognized += Rec_SpeechRecognized;
+        }
+
+        private void Rec_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
+        {
+            //Reconoce las palabras que el usuario dice y las repite dependiendo de su diccionario de frases.
+            VozAna.Speak(e.Result.Text);
+        }
     }
 }

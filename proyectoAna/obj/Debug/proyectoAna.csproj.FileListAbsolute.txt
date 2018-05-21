@@ -1,0 +1,15 @@
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\bin\Debug\proyectoAna.exe.config
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\bin\Debug\proyectoAna.exe
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\bin\Debug\proyectoAna.pdb
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\obj\Debug\proyectoAna.csprojAssemblyReference.cache
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\obj\Debug\MainWindow.g.cs
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\obj\Debug\App.g.cs
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\obj\Debug\proyectoAna_MarkupCompile.cache
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\obj\Debug\proyectoAna_MarkupCompile.lref
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\obj\Debug\MainWindow.baml
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\obj\Debug\proyectoAna.g.resources
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\obj\Debug\proyectoAna.Properties.Resources.resources
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\obj\Debug\proyectoAna.csproj.GenerateResource.cache
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\obj\Debug\proyectoAna.csproj.CoreCompileInputs.cache
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\obj\Debug\proyectoAna.exe
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\obj\Debug\proyectoAna.pdb
