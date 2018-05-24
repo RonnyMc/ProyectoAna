@@ -7,10 +7,48 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="0"/>
+                <GradientStop Color="#FF00DCFF" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="59*"/>
-            <ColumnDefinition Width="73*"/>
+            <ColumnDefinition Width="166*"/>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="219*"/>
         </Grid.ColumnDefinitions>
+        <ProgressBar x:Name="pbAudio" HorizontalAlignment="Left" Height="38" Margin="214,199,-115,0" VerticalAlignment="Top" Width="339" Value="50" RenderTransformOrigin="0.5,0.5" Grid.Column="2">
+            <ProgressBar.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFFF3C3C" Offset="1"/>
+                    <GradientStop Color="#FF070101"/>
+                </LinearGradientBrush>
+            </ProgressBar.Foreground>
+            <ProgressBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-89.915"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ProgressBar.RenderTransform>
+            <ProgressBar.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF002C04" Offset="0.776"/>
+                </RadialGradientBrush>
+            </ProgressBar.Background>
+        </ProgressBar>
+        <Label x:Name="lblPalabras" Content="" HorizontalAlignment="Left" Margin="174,372,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="364" Height="37" FontSize="20" FontFamily="Sitka Small" FontWeight="Bold">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF740025" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
 
     </Grid>
 </Window>

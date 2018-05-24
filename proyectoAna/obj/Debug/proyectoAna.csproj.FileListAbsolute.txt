@@ -13,3 +13,7 @@ A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\obj\Debug\p
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\obj\Debug\proyectoAna.csproj.CoreCompileInputs.cache
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\obj\Debug\proyectoAna.exe
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\ProyectoAna\proyectoAna\obj\Debug\proyectoAna.pdb
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Debug\ConfigInit.g.cs
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Debug\Splash.g.cs
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Debug\ConfigInit.baml
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Debug\Splash.baml
