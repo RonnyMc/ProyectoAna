@@ -31,6 +31,54 @@ namespace proyectoAna
         public MainWindow()
         {
             InitializeComponent();
+            lblVisor.Content = string.Empty;
+            visor.Visibility = Visibility.Hidden;
+        }
+
+        private void button_MouseEnter(object sender, MouseEventArgs e)
+        {
+            SonarClick();
+            String nombreBoton = ((FrameworkElement)sender).Name.ToString();
+            visor.Visibility = Visibility.Visible;
+            lblVisor.Content = nombreBoton.Substring(3).ToUpper();
+        }
+
+        private void button_MouseLeave(object sender, MouseEventArgs e)
+        {
+            visor.Visibility = Visibility.Hidden;
+            lblVisor.Content = string.Empty;
+        }
+
+        private static void SonarClick()
+        {
+            if (Properties.Settings.Default.EfectoSonido == true)
+            {
+                var uri = new Uri(@"../../Sound/hover.wav", UriKind.RelativeOrAbsolute);
+                var player = new MediaPlayer();
+
+                player.Open(uri);
+                player.Play();
+
+            }
+
+        }
+
+        private void hearth_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
+
+        private void heart_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if (Properties.Settings.Default.EfectoSonido == true)
+            {
+                var uri = new Uri(@"../../Sound/hearth.wav", UriKind.RelativeOrAbsolute);
+                var player = new MediaPlayer();
+
+                player.Open(uri);
+                player.Play();
+            }
+
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -51,25 +99,25 @@ namespace proyectoAna
             rec.RecognizeAsync(RecognizeMode.Multiple);
             //Reconoce el patron de frase hablado por el usuario y ejecuta una accion.
             rec.SpeechRecognized += Rec_SpeechRecognized;
-            //VozAna.Speak("Bienvenido a a tu nueva asistente virtual, soy Ana, Me da gusto conocerte");
             //genera un valor al reconocer la voz
             rec.AudioLevelUpdated += Rec_AudioLevelUpdated;
+            VozAna.Speak("Bienvenido a tu nueva asistente virtual, Soy Ana, ¿En que puedo ayudarte?");
         }
 
         private void Rec_AudioLevelUpdated(object sender, AudioLevelUpdatedEventArgs e)
         {
-            pbAudio.Value = e.AudioLevel;
+            //pbAudio.Value = e.AudioLevel;
         }
 
         private void Rec_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
             //Reconoce las palabras que el usuario dice y las repite dependiendo de su diccionario de frases.
             //VozAna.Speak(e.Result.Text);
-            lblPalabras.Content = e.Result.Text;
+            //lblPalabras.Content = e.Result.Text;
             switch (e.Result.Text)
             {
                 case "bien":
-                    VozAna.Speak("Me alegro señor jassio, ¿alguna otra pregunta?");
+                    //VozAna.Speak("Me alegro señor jassio, ¿alguna otra pregunta?");
                     break;
                 case "Hola Ana":
                     VozAna.Speak("Hola Ronny, ¿como estas?");
@@ -112,6 +160,17 @@ namespace proyectoAna
                 default:
                     break;
             }
+        }
+
+        private void Button_MouseEnter(object sender, MouseEventArgs e)
+        {
+            String nombreBoton = ((FrameworkElement)sender).Name.ToString();
+        }
+
+        private void btnSalir_Click(object sender, RoutedEventArgs e)
+        {
+            VozAna.Speak("Cuando me necesites, vuelve a inicializarme, espero haberte ayudado, Adios");
+            this.Close();
         }
     }
 }

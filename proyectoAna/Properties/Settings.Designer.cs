@@ -34,5 +34,17 @@ namespace proyectoAna.Properties {
                 this["cfgInit"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool EfectoSonido {
+            get {
+                return ((bool)(this["EfectoSonido"]));
+            }
+            set {
+                this["EfectoSonido"] = value;
+            }
+        }
     }
 }

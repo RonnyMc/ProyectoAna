@@ -17,3 +17,8 @@ A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Debug\C
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Debug\Splash.g.cs
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Debug\ConfigInit.baml
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Debug\Splash.baml
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Debug\proyectoAna_Content.g.cs
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\bin\Debug\proyectoAna.exe.manifest
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\bin\Debug\proyectoAna.application
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Debug\proyectoAna.exe.manifest
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Debug\proyectoAna.application

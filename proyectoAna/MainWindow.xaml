@@ -5,50 +5,93 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:proyectoAna"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
-    <Grid>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black" Offset="0"/>
-                <GradientStop Color="#FF00DCFF" Offset="1"/>
-            </LinearGradientBrush>
-        </Grid.Background>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="166*"/>
-            <ColumnDefinition Width="11*"/>
-            <ColumnDefinition Width="219*"/>
-        </Grid.ColumnDefinitions>
-        <ProgressBar x:Name="pbAudio" HorizontalAlignment="Left" Height="38" Margin="214,199,-115,0" VerticalAlignment="Top" Width="339" Value="50" RenderTransformOrigin="0.5,0.5" Grid.Column="2">
-            <ProgressBar.Foreground>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FFFF3C3C" Offset="1"/>
-                    <GradientStop Color="#FF070101"/>
-                </LinearGradientBrush>
-            </ProgressBar.Foreground>
-            <ProgressBar.RenderTransform>
+        Title="Ana-Virtual" Height="628" Width="729" Loaded="Window_Loaded" Icon="Images/System/ANA Logo_v_Beta_1Icono.ico" Background="{x:Null}" WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+               AllowsTransparency="True" WindowStyle="None">
+    <Grid Margin="0,0,10,0">
+        <Image HorizontalAlignment="Left" Height="440" VerticalAlignment="Top" Width="453" Source="Images/System/Cmd_Ana_v1.png" Margin="69,0,0,0"/>
+
+        <Button x:Name="btnConfiguracion" Content="" HorizontalAlignment="Left" Height="37" Margin="327,59,0,0" VerticalAlignment="Top" Width="56" RenderTransformOrigin="0.281,0.45" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Background="{x:Null}">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Image Name="img1" Source="Images/Buttons/config.png" Margin="0,0,1,1" />
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="img1"  
+                            Property="Source"  
+                            Value="Images/Buttons/configOver.png" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+            <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="-89.915"/>
-                    <TranslateTransform/>
+                    <RotateTransform Angle="34.736"/>
+                    <TranslateTransform X="3.238" Y="-6.66"/>
                 </TransformGroup>
-            </ProgressBar.RenderTransform>
-            <ProgressBar.Background>
-                <RadialGradientBrush>
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FF002C04" Offset="0.776"/>
-                </RadialGradientBrush>
-            </ProgressBar.Background>
-        </ProgressBar>
-        <Label x:Name="lblPalabras" Content="" HorizontalAlignment="Left" Margin="174,372,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="364" Height="37" FontSize="20" FontFamily="Sitka Small" FontWeight="Bold">
-            <Label.Foreground>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="Black" Offset="0"/>
-                    <GradientStop Color="#FF740025" Offset="1"/>
-                </LinearGradientBrush>
-            </Label.Foreground>
-        </Label>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnComandos" Content="" HorizontalAlignment="Left" Height="39" Margin="385,100,0,0" VerticalAlignment="Top" Width="54" RenderTransformOrigin="0.44,0.524" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Background="{x:Null}">
+
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Image x:Name="img1" Source="Images/Buttons/comandos.png" />
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="img1"  
+        						Property="Source"  
+        						Value="Images/Buttons/comandosOver.png" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="43.096"/>
+                    <TranslateTransform X="0.234" Y="-2.467"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Border x:Name="heart" BorderThickness="1" HorizontalAlignment="Left" Height="202" Margin="189,115,0,0" VerticalAlignment="Top" Width="211" BorderBrush="#B2FFFFFF" CornerRadius="100" MouseLeftButtonDown="hearth_MouseLeftButtonDown" Cursor="Hand" MouseEnter="heart_MouseEnter">
+            <Border.Style>
+                <Style>
+                    <Setter Property="Border.Background" Value="#4C000000"/>
+                    <Style.Triggers>
+                        <Trigger Property="Border.IsMouseOver" Value="True">
+                            <Setter Property="Border.Background" Value="#02000000" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Border.Style>
+        </Border>
+        <Button x:Name="btnSalir" Content="" HorizontalAlignment="Left" Height="26" Margin="138,77,0,0" VerticalAlignment="Top" Width="29" RenderTransformOrigin="0.44,0.524" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Background="{x:Null}" Click="btnSalir_Click">
+
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Image x:Name="img1" Source="Images/Buttons/botonSalir2.png" />
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter TargetName="img1"  
+        						Property="Source"  
+        						Value="Images/Buttons/botonSalir2.png" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Button.Template>
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-48.521"/>
+                    <TranslateTransform X="0.234" Y="-2.467"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Image x:Name="visor" HorizontalAlignment="Left" Height="426" Margin="110,192,0,0" VerticalAlignment="Top" Width="609" Source="Images/System/visor.png" RenderTransformOrigin="0.523,0.802" Stretch="Fill"/>
+        <Label x:Name="lblVisor" Content="COMANDOS" HorizontalAlignment="Left" Margin="319,485,0,0" VerticalAlignment="Top" Width="305" Cursor="None" IsEnabled="False" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="24" Height="40" Padding="0" FontStyle="Italic" Foreground="#FF2983B6" FontFamily="Segoe WP"/>
 
     </Grid>
 </Window>
