@@ -33,6 +33,7 @@ namespace proyectoAna
             InitializeComponent();
             lblVisor.Content = string.Empty;
             visor.Visibility = Visibility.Hidden;
+            Bienvenida();
         }
 
         private void button_MouseEnter(object sender, MouseEventArgs e)
@@ -101,23 +102,22 @@ namespace proyectoAna
             rec.SpeechRecognized += Rec_SpeechRecognized;
             //genera un valor al reconocer la voz
             rec.AudioLevelUpdated += Rec_AudioLevelUpdated;
-            VozAna.Speak("Bienvenido a tu nueva asistente virtual, Soy Ana, ¿En que puedo ayudarte?");
         }
 
         private void Rec_AudioLevelUpdated(object sender, AudioLevelUpdatedEventArgs e)
         {
             //pbAudio.Value = e.AudioLevel;
         }
-
+        private void Bienvenida()
+        {
+            VozAna.Speak("Bienvenido a tu nueva asistente virtual, Soy Ana, Me da gusto conocerte");
+        }
         private void Rec_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
         {
-            //Reconoce las palabras que el usuario dice y las repite dependiendo de su diccionario de frases.
-            //VozAna.Speak(e.Result.Text);
-            //lblPalabras.Content = e.Result.Text;
             switch (e.Result.Text)
             {
                 case "bien":
-                    //VozAna.Speak("Me alegro señor jassio, ¿alguna otra pregunta?");
+                    VozAna.Speak("Me alegro señor ronny, ¿alguna otra pregunta?");
                     break;
                 case "Hola Ana":
                     VozAna.Speak("Hola Ronny, ¿como estas?");

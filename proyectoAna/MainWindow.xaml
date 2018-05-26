@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="Ana-Virtual" Height="628" Width="729" Loaded="Window_Loaded" Icon="Images/System/ANA Logo_v_Beta_1Icono.ico" Background="{x:Null}" WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
                AllowsTransparency="True" WindowStyle="None">
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="Window.Loaded">
+            <BeginStoryboard>
+                <Storyboard >
+                    <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:3" FillBehavior="HoldEnd" />
+                </Storyboard>
+            </BeginStoryboard>
+        </EventTrigger>
+    </Window.Triggers>
     <Grid Margin="0,0,10,0">
         <Image HorizontalAlignment="Left" Height="440" VerticalAlignment="Top" Width="453" Source="Images/System/Cmd_Ana_v1.png" Margin="69,0,0,0"/>
 
