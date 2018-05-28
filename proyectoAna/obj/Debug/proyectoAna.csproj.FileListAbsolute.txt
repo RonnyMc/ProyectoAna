@@ -22,3 +22,9 @@ A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\bin\Debug\p
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\bin\Debug\proyectoAna.application
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Debug\proyectoAna.exe.manifest
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Debug\proyectoAna.application
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\bin\Debug\Ana_BD.mdf
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\bin\Debug\Ana_BD_log.ldf
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\bin\Debug\BibliotecaAna.dll
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\bin\Debug\BibliotecaAna.pdb
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\bin\Debug\BibliotecaAna.dll.config
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Debug\proyectoAna.csproj.CopyComplete

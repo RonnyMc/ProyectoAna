@@ -19,7 +19,7 @@
     <Grid Margin="0,0,10,0">
         <Image HorizontalAlignment="Left" Height="440" VerticalAlignment="Top" Width="453" Source="Images/System/Cmd_Ana_v1.png" Margin="69,0,0,0"/>
 
-        <Button x:Name="btnConfiguracion" Content="" HorizontalAlignment="Left" Height="37" Margin="327,59,0,0" VerticalAlignment="Top" Width="56" RenderTransformOrigin="0.281,0.45" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Background="{x:Null}">
+        <Button x:Name="btnConfiguracion" Content="" HorizontalAlignment="Left" Height="37" Margin="327,59,0,0" VerticalAlignment="Top" Width="56" RenderTransformOrigin="0.281,0.45" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Background="{x:Null}" Click="btnConfiguracion_Click">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Image Name="img1" Source="Images/Buttons/config.png" Margin="0,0,1,1" />
@@ -41,7 +41,7 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="btnComandos" Content="" HorizontalAlignment="Left" Height="39" Margin="385,100,0,0" VerticalAlignment="Top" Width="54" RenderTransformOrigin="0.44,0.524" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Background="{x:Null}">
+        <Button x:Name="btnComandos" Content="" HorizontalAlignment="Left" Height="39" Margin="385,100,0,0" VerticalAlignment="Top" Width="54" RenderTransformOrigin="0.44,0.524" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Background="{x:Null}" Click="btnComandos_Click">
 
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">

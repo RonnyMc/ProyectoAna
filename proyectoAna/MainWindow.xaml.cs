@@ -35,60 +35,12 @@ namespace proyectoAna
             visor.Visibility = Visibility.Hidden;
             Bienvenida();
         }
-
-        private void button_MouseEnter(object sender, MouseEventArgs e)
-        {
-            SonarClick();
-            String nombreBoton = ((FrameworkElement)sender).Name.ToString();
-            visor.Visibility = Visibility.Visible;
-            lblVisor.Content = nombreBoton.Substring(3).ToUpper();
-        }
-
-        private void button_MouseLeave(object sender, MouseEventArgs e)
-        {
-            visor.Visibility = Visibility.Hidden;
-            lblVisor.Content = string.Empty;
-        }
-
-        private static void SonarClick()
-        {
-            if (Properties.Settings.Default.EfectoSonido == true)
-            {
-                var uri = new Uri(@"../../Sound/hover.wav", UriKind.RelativeOrAbsolute);
-                var player = new MediaPlayer();
-
-                player.Open(uri);
-                player.Play();
-
-            }
-
-        }
-
-        private void hearth_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            this.DragMove();
-        }
-
-        private void heart_MouseEnter(object sender, MouseEventArgs e)
-        {
-            if (Properties.Settings.Default.EfectoSonido == true)
-            {
-                var uri = new Uri(@"../../Sound/hearth.wav", UriKind.RelativeOrAbsolute);
-                var player = new MediaPlayer();
-
-                player.Open(uri);
-                player.Play();
-            }
-
-        }
-
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             //Capturar el sonido de la voz por la entrada por defecto del ordenador
             rec.SetInputToDefaultAudioDevice();
             //Reconoce las palabras que se le indica explicita como parametro en la funcion
-            Choices frases = new Choices(new string[] {"Hola Ana", "Como Estas", "Que haces", "inicies Google", "iniciar google",
-                                                        "iniciar musica", "bien" });
+            Choices frases = new Choices();
             //Funcion para construir la gramatica para el reconocedor y reproduccion de voz.
             GrammarBuilder grammarBuilder = new GrammarBuilder();
             //Se pasa el arreglo de frases creadas en choices y se adjunta al constructor de gramatica.
@@ -103,7 +55,13 @@ namespace proyectoAna
             //genera un valor al reconocer la voz
             rec.AudioLevelUpdated += Rec_AudioLevelUpdated;
         }
-
+        private void button_MouseEnter(object sender, MouseEventArgs e)
+        {
+            SonarClick();
+            String nombreBoton = ((FrameworkElement)sender).Name.ToString();
+            visor.Visibility = Visibility.Visible;
+            lblVisor.Content = nombreBoton.Substring(3).ToUpper();
+        }
         private void Rec_AudioLevelUpdated(object sender, AudioLevelUpdatedEventArgs e)
         {
             //pbAudio.Value = e.AudioLevel;
@@ -161,6 +119,43 @@ namespace proyectoAna
                     break;
             }
         }
+        private void button_MouseLeave(object sender, MouseEventArgs e)
+        {
+            visor.Visibility = Visibility.Hidden;
+            lblVisor.Content = string.Empty;
+        }
+
+        private static void SonarClick()
+        {
+            if (Properties.Settings.Default.EfectoSonido == true)
+            {
+                var uri = new Uri(@"../../Sound/hover.wav", UriKind.RelativeOrAbsolute);
+                var player = new MediaPlayer();
+
+                player.Open(uri);
+                player.Play();
+
+            }
+
+        }
+
+        private void hearth_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
+
+        private void heart_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if (Properties.Settings.Default.EfectoSonido == true)
+            {
+                var uri = new Uri(@"../../Sound/hearth.wav", UriKind.RelativeOrAbsolute);
+                var player = new MediaPlayer();
+
+                player.Open(uri);
+                player.Play();
+            }
+
+        }
 
         private void Button_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -171,6 +166,17 @@ namespace proyectoAna
         {
             VozAna.Speak("Cuando me necesites, vuelve a inicializarme, espero haberte ayudado, Adios");
             this.Close();
+        }
+
+        private void btnConfiguracion_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnComandos_Click(object sender, RoutedEventArgs e)
+        {
+            ConfigInit config = new ConfigInit();
+            config.Show();
         }
     }
 }

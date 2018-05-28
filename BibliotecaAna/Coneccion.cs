@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BibliotecaAna
 {
-    class Coneccion
+    public class Coneccion
     {
         public static SqlConnection ObtenerConecction()
         {

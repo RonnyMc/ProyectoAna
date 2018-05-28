@@ -43,14 +43,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="proyectoAna.exe" size="682464">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BibliotecaAna.dll" size="6144">
+      <assemblyIdentity name="BibliotecaAna" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>YFG1x05cGO7fEeKE3RMGzHC/thNRpd3idZEdJQh66PY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="proyectoAna.exe" size="685536">
       <assemblyIdentity name="proyectoAna" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nmf3YcbrL1OXqO4+cwXcw+pOXS6s7/vGfh5X149PGz8=</dsig:DigestValue>
+        <dsig:DigestValue>kv7IaJbiNE4aMJCWEsZzb7JQcqGdgn0/G0TjrXYY4pQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
