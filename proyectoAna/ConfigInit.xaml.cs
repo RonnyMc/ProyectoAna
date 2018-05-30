@@ -21,6 +21,7 @@ namespace proyectoAna
     /// </summary>
     public partial class ConfigInit : Window
     {
+        public int count = 0;
         public ConfigInit()
         {
             InitializeComponent();
@@ -34,6 +35,9 @@ namespace proyectoAna
             if (cmd.ExecuteNonQuery() > 0)
             {
                 MessageBox.Show("Comando Insertado");
+                txtAccion.Clear();
+                txtComando.Clear();
+                txtRespuesta.Clear();
             }
             else
             {
