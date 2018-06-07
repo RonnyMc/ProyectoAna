@@ -16,10 +16,10 @@
             </BeginStoryboard>
         </EventTrigger>
     </Window.Triggers>
-    <Grid Margin="0,0,10,0">
+    <Grid>
         <Image HorizontalAlignment="Left" Height="440" VerticalAlignment="Top" Width="453" Source="Images/System/Cmd_Ana_v1.png" Margin="69,0,0,0"/>
 
-        <Button x:Name="btnConfiguracion" Content="" HorizontalAlignment="Left" Height="34" Margin="322,58,0,0" VerticalAlignment="Top" Width="66" RenderTransformOrigin="0.281,0.45" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Background="{x:Null}" Click="btnConfiguracion_Click">
+        <Button x:Name="btnConfiguracion" Content="" HorizontalAlignment="Left" Height="43" Margin="338,66,0,0" VerticalAlignment="Top" Width="86" RenderTransformOrigin="0.489,0.485" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Background="{x:Null}" Click="btnConfiguracion_Click">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Image Name="img1" Source="Images/Buttons/config.png" Margin="0,0,1,1" />
@@ -36,19 +36,19 @@
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="35.481"/>
-                    <TranslateTransform X="3.238" Y="-6.66"/>
+                    <RotateTransform Angle="37.976"/>
+                    <TranslateTransform X="-0.358" Y="1.637"/>
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <Button x:Name="btnComandos" Content="" HorizontalAlignment="Left" Height="32" Margin="366,85,0,0" VerticalAlignment="Top" Width="52" RenderTransformOrigin="0.44,0.524" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Background="{x:Null}" Click="btnComandos_Click">
+        <Button x:Name="btnComandos" Content="" HorizontalAlignment="Left" Height="44" Margin="388,109,0,0" VerticalAlignment="Top" Width="64" RenderTransformOrigin="0.5,0.497" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Background="{x:Null}" Click="btnComandos_Click">
 
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Image x:Name="img1" Source="Images/Buttons/comandos.png" />
+                    <Image x:Name="img2" Source="Images/Buttons/comandos.png" />
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="true">
-                            <Setter TargetName="img1"  
+                            <Setter TargetName="img2"  
         						Property="Source"  
         						Value="Images/Buttons/comandosOver.png" />
                         </Trigger>
@@ -59,8 +59,8 @@
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="43.096"/>
-                    <TranslateTransform X="0.234" Y="-2.467"/>
+                    <RotateTransform Angle="57.837"/>
+                    <TranslateTransform X="-0.004" Y="0.235"/>
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
@@ -76,16 +76,16 @@
                 </Style>
             </Border.Style>
         </Border>
-        <Button x:Name="btnSalir" Content="" HorizontalAlignment="Left" Height="26" Margin="138,77,0,0" VerticalAlignment="Top" Width="29" RenderTransformOrigin="0.44,0.524" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Background="{x:Null}" Click="btnSalir_Click">
+        <Button x:Name="btnSalir" Content="" HorizontalAlignment="Left" Height="31" Margin="133,76,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="0.247,0.21" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Background="{x:Null}" Click="btnSalir_Click">
 
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Image x:Name="img1" Source="Images/Buttons/botonSalir2.png" />
+                    <Image x:Name="img3" Source="Images/Buttons/salir22.png" />
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="true">
-                            <Setter TargetName="img1"  
+                            <Setter TargetName="img3"  
         						Property="Source"  
-        						Value="Images/Buttons/salir.png" />
+        						Value="Images/Buttons/salir11.png" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -94,8 +94,8 @@
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="-48.521"/>
-                    <TranslateTransform X="0.234" Y="-2.467"/>
+                    <RotateTransform Angle="-44.245"/>
+                    <TranslateTransform X="-3.99" Y="5.352"/>
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
@@ -117,16 +117,16 @@
                 </TransformGroup>
             </ProgressBar.RenderTransform>
         </ProgressBar>
-        <Button x:Name="btnActualizar" Content="" HorizontalAlignment="Left" Height="28" Margin="398,119,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="0.549,0.487" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Background="{x:Null}" Click="btnActualizar_Click">
+        <Button x:Name="btnActualizar" Content="" HorizontalAlignment="Left" Height="30" Margin="454,244,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="0.488,0.477" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Background="{x:Null}" Click="btnActualizar_Click">
 
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
-                    <Image x:Name="img1" Source="Images/Buttons/actualizar1.png" />
+                    <Image x:Name="img1" Source="Images/Buttons/actualizar11.png" />
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="true">
                             <Setter TargetName="img1"  
                                 Property="Source"  
-                                Value="Images/Buttons/actualizar2.png" />
+                                Value="Images/Buttons/actualizar22.png" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -135,8 +135,8 @@
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="57.923"/>
-                    <TranslateTransform X="-1.321" Y="2.342"/>
+                    <RotateTransform Angle="101.418"/>
+                    <TranslateTransform X="-0.047" Y="0.316"/>
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>

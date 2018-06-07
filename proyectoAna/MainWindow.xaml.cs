@@ -37,7 +37,6 @@ namespace proyectoAna
             InitializeComponent();
             lblVisor.Content = string.Empty;
             visor.Visibility = Visibility.Hidden;
-            LlenarListaComandos();
             //Bienvenida();
             c = c + 1;
         }
@@ -76,8 +75,8 @@ namespace proyectoAna
         {
             foreach (Comandos com in Listacomandos)
             {
-                //if (e.Result.Confidence > 0.6)
-                //{
+                if (e.Result.Confidence > 0.6)
+                {
                     if (com.Comando.ToString().Equals(e.Result.Text.ToString()))
                     {
                         //VozAna.Speak(e.Result.Text.ToString());
@@ -90,7 +89,7 @@ namespace proyectoAna
                             VozAna.Speak(com.Respuesta.ToString());
                         }
                     }
-                //}
+                }
             }
         }
         private void LlenarListaComandos()
@@ -145,7 +144,6 @@ namespace proyectoAna
             }
 
         }
-
         private void hearth_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             this.DragMove();
