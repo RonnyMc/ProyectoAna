@@ -32,3 +32,37 @@ A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Release
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Release\proyectoAna.csproj.CopyComplete
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Release\proyectoAna.exe
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Release\proyectoAna.pdb
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\bin\Release\Ana_BD.mdf
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\bin\Release\Ana_BD_log.ldf
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\bin\Release\proyectoAna.exe.config
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\bin\Release\proyectoAna.exe.manifest
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\bin\Release\proyectoAna.application
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\bin\Release\proyectoAna.exe
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\bin\Release\proyectoAna.pdb
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\bin\Release\BibliotecaAna.dll
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\bin\Release\CircularProgressBar.dll
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\bin\Release\WinFormAnimation.dll
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\bin\Release\BibliotecaAna.pdb
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\bin\Release\BibliotecaAna.dll.config
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\bin\Release\CircularProgressBar.xml
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\bin\Release\WinFormAnimation.xml
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\proyectoAna.csprojAssemblyReference.cache
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\ConfigInit.g.cs
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\MainWindow.g.cs
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\Splash.g.cs
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\App.g.cs
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\proyectoAna_Content.g.cs
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\proyectoAna_MarkupCompile.cache
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\proyectoAna_MarkupCompile.lref
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\ConfigInit.baml
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\MainWindow.baml
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\Splash.baml
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\proyectoAna.g.resources
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\proyectoAna.Properties.Resources.resources
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\proyectoAna.csproj.GenerateResource.cache
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\proyectoAna.csproj.CoreCompileInputs.cache
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\proyectoAna.exe.manifest
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\proyectoAna.application
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\proyectoAna.csproj.CopyComplete
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\proyectoAna.exe
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\proyectoAna.pdb

@@ -3,7 +3,16 @@ A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\BibliotecaAna\bin\Relea
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\BibliotecaAna\bin\Release\BibliotecaAna.dll.config
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\BibliotecaAna\bin\Release\BibliotecaAna.dll
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\BibliotecaAna\bin\Release\BibliotecaAna.pdb
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\BibliotecaAna\obj\Release\BibliotecaAna.csprojAssemblyReference.cache
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\BibliotecaAna\obj\Release\BibliotecaAna.csproj.CoreCompileInputs.cache
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\BibliotecaAna\obj\Release\BibliotecaAna.dll
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\BibliotecaAna\obj\Release\BibliotecaAna.pdb
-A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\BibliotecaAna\obj\Release\BibliotecaAna.csprojAssemblyReference.cache
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\BibliotecaAna\bin\Release\Ana_BD.mdf
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\BibliotecaAna\bin\Release\Ana_BD_log.ldf
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\BibliotecaAna\bin\Release\BibliotecaAna.dll.config
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\BibliotecaAna\bin\Release\BibliotecaAna.dll
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\BibliotecaAna\bin\Release\BibliotecaAna.pdb
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\BibliotecaAna\obj\Release\BibliotecaAna.csprojAssemblyReference.cache
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\BibliotecaAna\obj\Release\BibliotecaAna.csproj.CoreCompileInputs.cache
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\BibliotecaAna\obj\Release\BibliotecaAna.dll
+C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\BibliotecaAna\obj\Release\BibliotecaAna.pdb

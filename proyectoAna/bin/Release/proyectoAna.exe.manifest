@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+kZjkihci6nHWf+wbP7CSHEN0K3KWJEVUZ/ZpA6pTwY=</dsig:DigestValue>
+        <dsig:DigestValue>CPd8jrwWLjeGgt/q3Q6QQC4aYEC+LZ32vP5WyuVnTw8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>x3x03q2mmMNGT5jPnsqvMzmfY0rLSFkwt8FSBWrWa64=</dsig:DigestValue>
+        <dsig:DigestValue>dvouC7RwM0StXkP1RlIX4vRfucKWvEi1oVC+9ak6X1g=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -99,13 +99,13 @@
       <dsig:DigestValue>lzfxRRKUo2OBhP7tbrTkeKBnmjtdEbwJSpydzP4MnMI=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="proyectoAna.exe.config" size="1054">
+  <file name="proyectoAna.exe.config" size="1034">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>WtHTqES617KHGYl+T4FdHpgSxckCvySoSDlmq0uUQn0=</dsig:DigestValue>
+      <dsig:DigestValue>Ktxv8NdTfWOCVbxOL5WRkI3atrdno++K8WQCD8Uourg=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Sound\hearth.wav" size="121994">
