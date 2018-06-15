@@ -12,7 +12,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Entidades;
 using BibliotecaAna;
+using MySql.Data.MySqlClient;
 
 namespace proyectoAna
 {
@@ -28,9 +30,9 @@ namespace proyectoAna
         }
         public void CrearComando()
         {
-            SqlConnection con = Coneccion.ObtenerConecction();
+            MySqlConnection con = Coneccion.ObtenerConecction();
             Comandos cm = new Comandos(txtComando.Text, txtAccion.Text, txtRespuesta.Text);
-            SqlCommand cmd = new SqlCommand(string.Format("INSERT INTO Comandos(comandos, accion, respuesta) " +
+            MySqlCommand cmd = new MySqlCommand(string.Format("INSERT INTO Comandos(comandos, accion, respuesta) " +
                                             "Values ('{0}', '{1}', '{2}');", cm.Comando, cm.Accion, cm.Respuesta) ,con);
             if (cmd.ExecuteNonQuery() > 0)
             {
@@ -47,10 +49,10 @@ namespace proyectoAna
         }
         public void llenarGrid()
         {
-            SqlConnection con = Coneccion.ObtenerConecction();
+            MySqlConnection con = Coneccion.ObtenerConecction();
             List<Comandos> listaComandos = new List<Comandos>();
-            SqlCommand cmd = new SqlCommand(string.Format("SELECT * FROM Comandos"), con);
-            SqlDataReader dataReader= cmd.ExecuteReader();
+            MySqlCommand cmd = new MySqlCommand(string.Format("SELECT * FROM Comandos"), con);
+            MySqlDataReader dataReader= cmd.ExecuteReader();
             while (dataReader.Read())
             {
                 listaComandos.Add(new Comandos(dataReader.GetInt32(0),dataReader.GetString(1),dataReader.GetString(2), 

@@ -15,7 +15,9 @@ using System.Windows.Shapes;
 using System.Speech.Recognition; //Reconocedor, escuchar e interpretar nuestra voz
 using System.Speech.Synthesis; //Voz del dispositivo, Voz de Ana
 using System.Data.SqlClient;
+using Entidades;
 using BibliotecaAna;
+using MySql.Data.MySqlClient;
 
 namespace proyectoAna
 {
@@ -95,9 +97,9 @@ namespace proyectoAna
         }
         private void LlenarListaComandos()
         {
-            SqlConnection con = Coneccion.ObtenerConecction();
-            SqlCommand cmd = new SqlCommand(string.Format("SELECT * FROM Comandos"), con);
-            SqlDataReader dataReader = cmd.ExecuteReader();
+            MySqlConnection con = Coneccion.ObtenerConecction();
+            MySqlCommand cmd = new MySqlCommand(string.Format("SELECT * FROM Comandos"), con);
+            MySqlDataReader dataReader = cmd.ExecuteReader();
             while (dataReader.Read())
             {
                 Listacomandos.Add(new Comandos(dataReader.GetInt32(0), dataReader.GetString(1), dataReader.GetString(2),
@@ -108,9 +110,9 @@ namespace proyectoAna
         private string [] CargarFrases()
         {
             string[] frases = new string[0];
-            SqlConnection con = Coneccion.ObtenerConecction();
-            SqlCommand cmd = new SqlCommand(string.Format("SELECT comandos FROM Comandos"), con);
-            SqlDataReader dataReader = cmd.ExecuteReader();
+            MySqlConnection con = Coneccion.ObtenerConecction();
+            MySqlCommand cmd = new MySqlCommand(string.Format("SELECT comandos FROM Comandos"), con);
+            MySqlDataReader dataReader = cmd.ExecuteReader();
             while (dataReader.Read())
             {
                 Array.Resize(ref frases, frases.Length + 1);

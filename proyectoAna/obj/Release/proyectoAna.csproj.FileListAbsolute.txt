@@ -66,3 +66,9 @@ C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Rel
 C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\proyectoAna.csproj.CopyComplete
 C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\proyectoAna.exe
 C:\Users\RONNY\Desktop\ProyectoAna-master\ProyectoAna-master\proyectoAna\obj\Release\proyectoAna.pdb
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\bin\Release\Entidades.dll
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\bin\Release\Entidades.pdb
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\bin\Release\Google.Protobuf.dll
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\bin\Release\MySql.Data.dll
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\bin\Release\Google.Protobuf.xml
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\bin\Release\MySql.Data.xml
