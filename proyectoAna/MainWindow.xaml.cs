@@ -16,7 +16,7 @@ using System.Speech.Recognition; //Reconocedor, escuchar e interpretar nuestra v
 using System.Speech.Synthesis; //Voz del dispositivo, Voz de Ana
 using System.Data.SqlClient;
 using Entidades;
-using BibliotecaAna;
+using Datos;
 using MySql.Data.MySqlClient;
 
 namespace proyectoAna
@@ -30,6 +30,7 @@ namespace proyectoAna
         SpeechRecognitionEngine rec = new SpeechRecognitionEngine();
         SpeechSynthesizer VozAna = new SpeechSynthesizer();
         List<Comandos> Listacomandos = new List<Comandos>();
+        string[] CargarFrases;
         Random aleartorio = new Random();
         public int numero1 = 0;
         public int numero2 = 0;
@@ -39,7 +40,8 @@ namespace proyectoAna
             InitializeComponent();
             lblVisor.Content = string.Empty;
             visor.Visibility = Visibility.Hidden;
-            LlenarListaComandos();
+            Listacomandos = Negocio.CNegocio.Instancia.comandos_ListarAll();
+            CargarFrases = Negocio.CNegocio.Instancia.CargarFrases();
             //Bienvenida();
             c = c + 1;
         }
@@ -55,7 +57,7 @@ namespace proyectoAna
             //Capturar el sonido de la voz por la entrada por defecto del ordenador
             rec.SetInputToDefaultAudioDevice();
             //Reconoce las palabras que se le indica explicita como parametro en la funcion
-            Choices frases = new Choices(CargarFrases());
+            Choices frases = new Choices(CargarFrases);
             //Funcion para construir la gramatica para el reconocedor y reproduccion de voz.
             GrammarBuilder grammarBuilder = new GrammarBuilder();
             //Se pasa el arreglo de frases creadas en choices y se adjunta al constructor de gramatica.
@@ -78,8 +80,8 @@ namespace proyectoAna
         {
             foreach (Comandos com in Listacomandos)
             {
-                //if (e.Result.Confidence > 0.6)
-                //{
+                if (e.Result.Confidence > 0.6)
+                {
                     if (com.Comando.ToString().Equals(e.Result.Text.ToString()))
                     {
                         //VozAna.Speak(e.Result.Text.ToString());
@@ -92,34 +94,8 @@ namespace proyectoAna
                             VozAna.Speak(com.Respuesta.ToString());
                         }
                     }
-                //}
+                }
             }
-        }
-        private void LlenarListaComandos()
-        {
-            MySqlConnection con = Coneccion.ObtenerConecction();
-            MySqlCommand cmd = new MySqlCommand(string.Format("SELECT * FROM Comandos"), con);
-            MySqlDataReader dataReader = cmd.ExecuteReader();
-            while (dataReader.Read())
-            {
-                Listacomandos.Add(new Comandos(dataReader.GetInt32(0), dataReader.GetString(1), dataReader.GetString(2),
-                                               dataReader.GetString(3)));
-            }
-            con.Close();
-        }
-        private string [] CargarFrases()
-        {
-            string[] frases = new string[0];
-            MySqlConnection con = Coneccion.ObtenerConecction();
-            MySqlCommand cmd = new MySqlCommand(string.Format("SELECT comandos FROM Comandos"), con);
-            MySqlDataReader dataReader = cmd.ExecuteReader();
-            while (dataReader.Read())
-            {
-                Array.Resize(ref frases, frases.Length + 1);
-                frases[frases.Length - 1] = dataReader.GetString(0);
-            }
-
-            return frases;
         }
         private void button_MouseEnter(object sender, MouseEventArgs e)
         {
@@ -145,9 +121,7 @@ namespace proyectoAna
                 player.Play();
 
             }
-
         }
-
         private void hearth_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             this.DragMove();
@@ -163,9 +137,7 @@ namespace proyectoAna
                 player.Open(uri);
                 player.Play();
             }
-
         }
-
         private void Button_MouseEnter(object sender, MouseEventArgs e)
         {
             String nombreBoton = ((FrameworkElement)sender).Name.ToString();
@@ -190,7 +162,6 @@ namespace proyectoAna
 
         private void btnActualizar_Click(object sender, RoutedEventArgs e)
         {
-           
             if (c>0)
             {
                 MainWindow main = new MainWindow();

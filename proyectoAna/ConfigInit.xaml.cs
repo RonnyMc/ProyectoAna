@@ -13,7 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Entidades;
-using BibliotecaAna;
+using Datos;
 using MySql.Data.MySqlClient;
 
 namespace proyectoAna
@@ -24,48 +24,43 @@ namespace proyectoAna
     public partial class ConfigInit : Window
     {
         public int count = 0;
+        List<Comandos> listacomandos = new List<Comandos>();
         public ConfigInit()
         {
             InitializeComponent();
+            llenarGridComandos();
         }
-        public void CrearComando()
+        public void InsertarComando()
         {
-            MySqlConnection con = Coneccion.ObtenerConecction();
-            Comandos cm = new Comandos(txtComando.Text, txtAccion.Text, txtRespuesta.Text);
-            MySqlCommand cmd = new MySqlCommand(string.Format("INSERT INTO Comandos(comandos, accion, respuesta) " +
-                                            "Values ('{0}', '{1}', '{2}');", cm.Comando, cm.Accion, cm.Respuesta) ,con);
-            if (cmd.ExecuteNonQuery() > 0)
+            try
             {
-                MessageBox.Show("Comando Insertado");
-                txtAccion.Clear();
-                txtComando.Clear();
-                txtRespuesta.Clear();
+                Comandos cm = new Comandos();
+                if (count ==1)
+                {
+                    cm.Accion = txtAccion.Text;
+                    cm.Comando = txtComando.Text;
+                    cm.Respuesta = txtRespuesta.Text;
+                    Negocio.CNegocio.Instancia.InsertarComando(cm);
+                    MessageBox.Show("Comando Insertado");
+                }
             }
-            else
+            catch (Exception exe)
             {
-                MessageBox.Show("Comando no insertado");
+                MessageBox.Show("Error Metodo InsertarComando: ->"+exe.Message);
             }
-            con.Close();
+            
         }
-        public void llenarGrid()
+        public void llenarGridComandos()
         {
-            MySqlConnection con = Coneccion.ObtenerConecction();
-            List<Comandos> listaComandos = new List<Comandos>();
-            MySqlCommand cmd = new MySqlCommand(string.Format("SELECT * FROM Comandos"), con);
-            MySqlDataReader dataReader= cmd.ExecuteReader();
-            while (dataReader.Read())
-            {
-                listaComandos.Add(new Comandos(dataReader.GetInt32(0),dataReader.GetString(1),dataReader.GetString(2), 
-                                               dataReader.GetString(3)));
-            }
-            dgCmd.ItemsSource = listaComandos;
-            con.Close();
+            listacomandos = Negocio.CNegocio.Instancia.comandos_ListarAll();
+            dgCmd.ItemsSource = listacomandos;
         }
 
         private void btnAgregar_Click(object sender, RoutedEventArgs e)
         {
-            CrearComando();
-            llenarGrid();
+            count = 1;
+            InsertarComando();
+            llenarGridComandos();
         }
     }
 }

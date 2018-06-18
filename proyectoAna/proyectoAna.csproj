@@ -215,13 +215,17 @@
     <Content Include="Sound\hover.wav" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BibliotecaAna\BibliotecaAna.csproj">
-      <Project>{ba97e930-e691-443a-a130-c1fbb15e403c}</Project>
-      <Name>BibliotecaAna</Name>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{2717804a-e06b-4a7d-9ac9-56ed59b47cb7}</Project>
+      <Name>Datos</Name>
     </ProjectReference>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{d8ce909b-da0a-4452-95fe-6e27ee9b5ae9}</Project>
       <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{92035415-33c1-4fa7-bcd8-34f057d462e2}</Project>
+      <Name>Negocio</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

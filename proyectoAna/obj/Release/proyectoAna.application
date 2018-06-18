@@ -7,14 +7,14 @@
     <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="proyectoAna.exe.manifest" size="8753">
+    <dependentAssembly dependencyType="install" codebase="proyectoAna.exe.manifest" size="9368">
       <assemblyIdentity name="proyectoAna.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>UjE4WBHcgRJE31JM8v0AUvQe92R9jygt1N8DZjnJgZE=</dsig:DigestValue>
+        <dsig:DigestValue>duOchES1qj2jfYlbQvLyRxwvN8Ujv5R1sLrVdNvo90Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

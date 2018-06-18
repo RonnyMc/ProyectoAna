@@ -1,0 +1,15 @@
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Negocio\bin\Debug\Negocio.dll
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Negocio\bin\Debug\Negocio.pdb
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Negocio\bin\Debug\Entidades.dll
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Negocio\bin\Debug\Google.Protobuf.dll
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Negocio\bin\Debug\MySql.Data.dll
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Negocio\bin\Debug\Entidades.pdb
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Negocio\bin\Debug\Google.Protobuf.xml
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Negocio\bin\Debug\MySql.Data.xml
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Negocio\obj\Debug\Negocio.dll
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Negocio\obj\Debug\Negocio.pdb
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Negocio\bin\Debug\Datos.dll
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Negocio\bin\Debug\Datos.pdb
