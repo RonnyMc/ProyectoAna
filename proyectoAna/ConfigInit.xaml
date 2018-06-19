@@ -7,14 +7,19 @@
         mc:Ignorable="d"
         Title="ConfigInit" Height="394" Width="800">
     <Grid Margin="0,0,0,10">
-        <Label Content="Comando&#xD;&#xA;" HorizontalAlignment="Left" Margin="84,276,0,0" VerticalAlignment="Top" Height="34"/>
-        <Label Content="Accion&#xA;" HorizontalAlignment="Left" Margin="256,276,0,0" VerticalAlignment="Top" Height="34"/>
-        <Label Content="Respuesta&#xA;" HorizontalAlignment="Left" Margin="424,276,0,0" VerticalAlignment="Top" Height="34"/>
-        <TextBox x:Name="txtComando" HorizontalAlignment="Left" Height="23" Margin="84,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" CaretBrush="Red"/>
-        <TextBox x:Name="txtAccion" HorizontalAlignment="Left" Height="23" Margin="256,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" CaretBrush="Red"/>
-        <TextBox x:Name="txtRespuesta" HorizontalAlignment="Left" Height="23" Margin="424,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" CaretBrush="Red"/>
-        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="627,303,0,0" VerticalAlignment="Top" Width="75" Click="btnAgregar_Click"/>
-        <DataGrid x:Name="dgCmd" HorizontalAlignment="Left" Height="235" Margin="10,10,0,0" VerticalAlignment="Top" Width="772"/>
+        <Label Content="Comando&#xD;&#xA;" HorizontalAlignment="Left" Margin="117,276,0,0" VerticalAlignment="Top" Height="34"/>
+        <Label Content="Accion&#xA;" HorizontalAlignment="Left" Margin="302,276,0,0" VerticalAlignment="Top" Height="34"/>
+        <Label Content="Respuesta&#xA;" HorizontalAlignment="Left" Margin="473,276,0,0" VerticalAlignment="Top" Height="34"/>
+        <TextBox x:Name="txtComando" HorizontalAlignment="Left" Height="23" Margin="117,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" CaretBrush="Red"/>
+        <TextBox x:Name="txtAccion" HorizontalAlignment="Left" Height="23" Margin="302,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" CaretBrush="Red"/>
+        <TextBox x:Name="txtRespuesta" HorizontalAlignment="Left" Height="23" Margin="473,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" CaretBrush="Red"/>
+        <Button x:Name="btnAgregar" Content="Agregar" HorizontalAlignment="Left" Margin="707,261,0,0" VerticalAlignment="Top" Width="75" Click="btnAgregar_Click"/>
+        <DataGrid x:Name="dgCmd" HorizontalAlignment="Left" Height="235" Margin="10,10,0,0" VerticalAlignment="Top" Width="772" SelectionChanged="dgCmd_SelectionChanged" IsReadOnly="True"/>
+        <Button x:Name="btnEliminar" Content="Eliminar" HorizontalAlignment="Left" Margin="707,311,0,0" VerticalAlignment="Top" Width="75" Click="btnEliminar_Click"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="23" Margin="31,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30" CaretBrush="Red" IsEnabled="False"/>
+        <Label Content="ID&#xA;" HorizontalAlignment="Left" Margin="31,276,0,0" VerticalAlignment="Top" Height="34"/>
+        <Button x:Name="btnNuevo" Content="Nuevo" HorizontalAlignment="Left" Margin="615,261,0,0" VerticalAlignment="Top" Width="75" Click="btnNuevo_Click"/>
+        <Button x:Name="btnEditar" Content="Editar" HorizontalAlignment="Left" Margin="615,311,0,0" VerticalAlignment="Top" Width="75" Click="btnEditar_Click"/>
 
     </Grid>
 </Window>

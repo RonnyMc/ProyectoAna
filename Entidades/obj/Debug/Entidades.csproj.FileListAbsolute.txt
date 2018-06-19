@@ -3,7 +3,6 @@ A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Entidades\bin\Debug\Ent
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Entidades\obj\Debug\Entidades.dll
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Entidades\obj\Debug\Entidades.pdb
-A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Entidades\bin\Debug\Google.Protobuf.dll
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Entidades\bin\Debug\MySql.Data.dll
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Entidades\bin\Debug\Google.Protobuf.xml
