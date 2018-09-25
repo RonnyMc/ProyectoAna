@@ -44,10 +44,15 @@ namespace Negocio
         {
             return ComandosDAO.InsertarComando(cm);
         }
+        public Comandos UpdateComando(Comandos comandos)
+        {
+            return ComandosDAO.UpdateComando(comandos);
+        }
         public int DeleteComando(int id)
         {
             return ComandosDAO.DeleteComando(id);
         }
+
         #endregion
     }
 }

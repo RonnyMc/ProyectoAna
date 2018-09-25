@@ -8,3 +8,4 @@ A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Entidades\bin\Debug\MyS
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Entidades\bin\Debug\Google.Protobuf.xml
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Entidades\bin\Debug\MySql.Data.xml
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Entidades\obj\Debug\Entidades.csproj.CopyComplete
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache

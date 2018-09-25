@@ -211,6 +211,7 @@
     <Resource Include="Images\Buttons\actualizar22.png" />
     <Resource Include="Images\Buttons\salir11.png" />
     <Resource Include="Images\Buttons\salir22.png" />
+    <Resource Include="Images\System\rectanguloazul.png" />
     <Content Include="Sound\hearth.wav" />
     <Content Include="Sound\hover.wav" />
   </ItemGroup>

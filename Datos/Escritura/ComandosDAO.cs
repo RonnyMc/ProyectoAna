@@ -23,6 +23,16 @@ namespace Datos.Escritura
             con.Close();
             return cm;
         }
+        public static Comandos UpdateComando(Comandos comandos)
+        {
+            MySqlConnection con = Conexion.ObtenerConecction();
+            MySqlCommand cmd = new MySqlCommand(string.Format("UPDATE comandos set comandos = '"+comandos.Comando+"', accion = '"
+                                                +comandos.Accion+"', respuesta = '"+comandos.Respuesta+ 
+                                                "' WHERE idComandos = '"+comandos.Id+"'"), con);
+            cmd.ExecuteNonQuery();
+            con.Close();
+            return comandos;
+        }
         public static int DeleteComando(int id)
         {
             MySqlConnection con = Conexion.ObtenerConecction();

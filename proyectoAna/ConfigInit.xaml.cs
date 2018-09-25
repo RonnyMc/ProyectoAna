@@ -24,7 +24,7 @@ namespace proyectoAna
     /// </summary>
     public partial class ConfigInit : Window
     {
-        public int count = 0;
+        public int count = 1;
         List<Comandos> listacomandos = new List<Comandos>();
         public ConfigInit()
         {
@@ -34,6 +34,7 @@ namespace proyectoAna
             txtComando.IsEnabled = false;
             txtRespuesta.IsEnabled = false;
             btnAgregar.IsEnabled = false;
+            btnEditar.IsEnabled = false;
         }
         public void InsertarComando()
         {
@@ -47,6 +48,15 @@ namespace proyectoAna
                     cm.Respuesta = txtRespuesta.Text;
                     Negocio.CNegocio.Instancia.InsertarComando(cm);
                     MessageBox.Show("Comando Insertado");
+                }
+                else
+                {
+                    cm.Accion = txtAccion.Text;
+                    cm.Comando = txtComando.Text;
+                    cm.Respuesta = txtRespuesta.Text;
+                    cm.Id = Int32.Parse(txtId.Text);
+                    Negocio.CNegocio.Instancia.UpdateComando(cm);
+                    MessageBox.Show("Comando Actualizado");
                 }
             }
             catch (Exception exe)
@@ -98,13 +108,16 @@ namespace proyectoAna
             }
             else
             {
-                count = 1;
                 InsertarComando();
                 llenarGridComandos();
                 txtAccion.Clear();
                 txtRespuesta.Clear();
                 txtId.Clear();
                 txtComando.Clear();
+                btnAgregar.IsEnabled = true;
+                btnEliminar.IsEnabled = true;
+                btnNuevo.IsEnabled = true;
+                btnAgregar.Content = "Agregar";
             }
         }
 
@@ -121,6 +134,7 @@ namespace proyectoAna
             {
                 Comandos comandos = dgCmd.SelectedItem as Comandos;
                 SelecionarDeLaLista(comandos);
+                btnEditar.IsEnabled = true;
             }
             else
             {
@@ -146,6 +160,7 @@ namespace proyectoAna
             txtRespuesta.Clear();
             txtId.Clear();
             txtComando.Clear();
+            btnAgregar.Content = "Agregar";
         }
 
         private void btnEditar_Click(object sender, RoutedEventArgs e)
@@ -154,6 +169,23 @@ namespace proyectoAna
             txtAccion.IsEnabled = true;
             txtComando.IsEnabled = true;
             txtRespuesta.IsEnabled = true;
+            btnAgregar.IsEnabled = true;
+            btnEliminar.IsEnabled = false;
+            btnAgregar.Content = "Modificar";
+        }
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            txtAccion.IsEnabled = false;
+            txtComando.IsEnabled = false;
+            txtRespuesta.IsEnabled = false;
+            btnAgregar.IsEnabled = true;
+            txtAccion.Clear();
+            txtRespuesta.Clear();
+            txtId.Clear();
+            txtComando.Clear();
+            btnAgregar.Content = "Agregar";
+            btnEliminar.IsEnabled = true;
+            btnEditar.IsEnabled = false;
         }
     }
 }

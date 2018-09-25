@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Datos.dll" size="6144">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Datos.dll" size="6656">
       <assemblyIdentity name="Datos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pP37qlT28GAOW26oyYOPAR4AJH8sUayi+4b/jKB1zjI=</dsig:DigestValue>
+        <dsig:DigestValue>S1jf7mKTlTHktLhjP0xW1LM8B7GWTaOOFvYO+QISEIo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>pDhp8CsUhxQ2alBFgxPtpmsukFRA071Toob7sxJ5ZLc=</dsig:DigestValue>
+        <dsig:DigestValue>Z+/t6q2g/2WqWH3HiWx9SLezwiW0ZZcNPdtlETbfSwY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,19 +110,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>sCMWmUnLcgzRW5KVAfhbQRBW0YXP/ZEoTkmUtiwzTCE=</dsig:DigestValue>
+        <dsig:DigestValue>5HcreI4znbT6Ima9Py0xcOpogdBe/vlGYgWI9b4JPP8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="proyectoAna.exe" size="757728">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="proyectoAna.exe" size="761312">
       <assemblyIdentity name="proyectoAna" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Wrp827z06Oni11qpv8cbf4g7s1QuR8rw33i0THV2xfs=</dsig:DigestValue>
+        <dsig:DigestValue>HAGDv0uZcbhmQdSD/Y5GsmkM4Ch4x4rNlfgQvUyCk/I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
