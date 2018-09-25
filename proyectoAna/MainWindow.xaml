@@ -117,7 +117,7 @@
                 </TransformGroup>
             </ProgressBar.RenderTransform>
         </ProgressBar>
-        <Button x:Name="btnActualizar" Content="" HorizontalAlignment="Left" Height="30" Margin="454,244,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="0.488,0.477" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Background="{x:Null}" Click="btnActualizar_Click">
+        <Button x:Name="btnActualizar" Content="" HorizontalAlignment="Left" Height="33" Margin="454,244,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="0.488,0.477" MouseEnter="button_MouseEnter" MouseLeave="button_MouseLeave" BorderBrush="{x:Null}" Foreground="{x:Null}" Cursor="Hand" Background="{x:Null}" Click="btnActualizar_Click">
 
             <Button.Template>
                 <ControlTemplate TargetType="{x:Type Button}">
