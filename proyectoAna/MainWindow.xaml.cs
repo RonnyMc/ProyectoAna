@@ -35,6 +35,8 @@ namespace proyectoAna
         public int numero1 = 0;
         public int numero2 = 0;
         int c = 0;
+        int pregunta = 0;
+        int respuesta = 1000;
         public MainWindow()
         {
             InitializeComponent();
@@ -91,7 +93,43 @@ namespace proyectoAna
                         }
                         if (com.Respuesta.Trim().Length > 0)
                         {
-                            VozAna.Speak(com.Respuesta.ToString());
+                            if (pregunta==0)
+                            {
+                                if (com.Respuesta.ToString().Equals("cuanto es uno mas uno"))
+                                {
+                                    pregunta = 1;
+                                    VozAna.Speak(com.Respuesta.ToString());
+                                    break;
+                                }break;
+                            }
+                            if (pregunta==1)
+                            {
+                                for (int i=0; i<respuesta; i++)
+                                {
+                                    if (e.Result.Text.ToString().Equals("dos"))
+                                    {
+                                        VozAna.Speak("Respuesta correcta");
+                                        pregunta = 0;
+                                        break;
+                                    }
+                                    else
+                                    {
+                                        VozAna.Speak("Respuesta incorrecta");
+                                        if (e.Result.Text.ToString().Equals("Me rindo"))
+                                        {
+                                            VozAna.Speak("La respuesta correcta es dos");
+                                            break;
+                                        }
+                                        if (i > 5)
+                                        {
+                                            VozAna.Speak("Quieres seguir intentando?");
+                                            break;
+                                        }
+                                        break;
+                                    }
+                                }
+                            }
+                            
                         }
                     }
                 }
