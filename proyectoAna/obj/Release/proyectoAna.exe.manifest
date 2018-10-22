@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>cMvcl4IFliZevNFujZVpsOWctAGQbhf8W4k/DclBCLY=</dsig:DigestValue>
+        <dsig:DigestValue>Zz20zJI/OuDsmUBzU1DcpOY99dSP91mMMw+obzecELE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -74,7 +74,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Z70KA6q2RRmtDtxS+SPgCXLBGvgTEM6OwVwEdM+55i8=</dsig:DigestValue>
+        <dsig:DigestValue>CIPaT0rdmWYKCQJ3c6VSbXoiI/2d5in5ZcaBVFyqapA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -110,19 +110,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>WpJ/ysviRVbbs3yjS0VqnZiN28B20dq5YWL8cOhsPzQ=</dsig:DigestValue>
+        <dsig:DigestValue>ccz9Dhl3qKtaPLSU2/mdF0LamigFDJ/GVQusPCc023Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="proyectoAna.exe" size="761824">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="proyectoAna.exe" size="761312">
       <assemblyIdentity name="proyectoAna" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6q8wK9kNSo7zyUB57EBNKv7W1xIfHygARuqQvugy7OI=</dsig:DigestValue>
+        <dsig:DigestValue>CShK7QVdjzqkbQZenOGvZz23tAc46+DILBQeXgDmrFI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -36,7 +36,6 @@ namespace proyectoAna
         public int numero2 = 0;
         int c = 0;
         int pregunta = 0;
-        int respuesta = 1000;
         public MainWindow()
         {
             InitializeComponent();
@@ -44,7 +43,7 @@ namespace proyectoAna
             visor.Visibility = Visibility.Hidden;
             Listacomandos = Negocio.CNegocio.Instancia.comandos_ListarAll();
             CargarFrases = Negocio.CNegocio.Instancia.CargarFrases();
-            //Bienvenida();
+            Bienvenida();
             c = c + 1;
         }
         private void Bienvenida()
@@ -82,57 +81,41 @@ namespace proyectoAna
         {
             foreach (Comandos com in Listacomandos)
             {
-                if (e.Result.Confidence > 0.6)
-                {
+                //if (e.Result.Confidence > 0.3)
+                //{
                     if (com.Comando.ToString().Equals(e.Result.Text.ToString()))
                     {
+                        //VozAna.Speak(com.Respuesta.ToString());
                         //VozAna.Speak(e.Result.Text.ToString());
                         if (com.Accion.Trim().Length > 0 && com.Accion != null)
                         {
                             System.Diagnostics.Process.Start(com.Accion.ToString());
+                            VozAna.Speak(com.Respuesta.ToString());
                         }
                         if (com.Respuesta.Trim().Length > 0)
                         {
                             if (pregunta==0)
                             {
+                                VozAna.Speak(com.Respuesta.ToString());
                                 if (com.Respuesta.ToString().Equals("cuanto es uno mas uno"))
                                 {
                                     pregunta = 1;
-                                    VozAna.Speak(com.Respuesta.ToString());
                                     break;
                                 }break;
                             }
                             if (pregunta==1)
                             {
-                                for (int i=0; i<respuesta; i++)
+                                if (e.Result.Text.ToString().Equals("dos"))
                                 {
-                                    if (e.Result.Text.ToString().Equals("dos"))
-                                    {
-                                        VozAna.Speak("Respuesta correcta");
-                                        pregunta = 0;
-                                        break;
-                                    }
-                                    else
-                                    {
-                                        VozAna.Speak("Respuesta incorrecta");
-                                        if (e.Result.Text.ToString().Equals("Me rindo"))
-                                        {
-                                            VozAna.Speak("La respuesta correcta es dos");
-                                            break;
-                                        }
-                                        if (i > 5)
-                                        {
-                                            VozAna.Speak("Quieres seguir intentando?");
-                                            break;
-                                        }
-                                        break;
-                                    }
+                                    VozAna.Speak("Respuesta correcta");
+                                    pregunta = 0;
+                                    break;
                                 }
                             }
                             
                         }
                     }
-                }
+                //}
             }
         }
         private void button_MouseEnter(object sender, MouseEventArgs e)

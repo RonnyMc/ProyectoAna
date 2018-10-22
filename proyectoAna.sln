@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "proyectoAna", "proyectoAna\proyectoAna.csproj", "{553C5968-DADF-4728-A255-6D255C4C9115}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vista", "proyectoAna\Vista.csproj", "{553C5968-DADF-4728-A255-6D255C4C9115}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{D8CE909B-DA0A-4452-95FE-6E27EE9B5AE9}"
 EndProject
