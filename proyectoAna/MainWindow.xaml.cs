@@ -31,7 +31,7 @@ namespace proyectoAna
             visor.Visibility = Visibility.Hidden;
             Listacomandos = Negocio.CNegocio.Instancia.comandos_ListarAll();
             CargarFrases = Negocio.CNegocio.Instancia.CargarFrases();
-            Bienvenida();
+            //Bienvenida();
             c = c + 1;
         }
         private void Bienvenida()
@@ -85,20 +85,35 @@ namespace proyectoAna
                             if (pregunta==0)
                             {
                                 VozAna.Speak(com.Respuesta.ToString());
-                                if (com.Respuesta.ToString().Equals("cuanto es uno mas uno"))
+                                if (com.Respuesta.ToString().Equals("cuantas figuras geométricas observas en la siguiente imagen"))
                                 {
                                     pregunta = 1;
                                     break;
-                                }break;
+                                }
+                                if (com.Respuesta.ToString().Equals("cuantas figuras geométricas observas en esta imagen"))
+                                {
+                                    pregunta = 2;
+                                    break;
+                                }
                             }
                             if (pregunta==1)
                             {
-                                if (e.Result.Text.ToString().Equals("dos"))
+                                if (e.Result.Text.ToString().Equals("cinco"))
                                 {
                                     VozAna.Speak("Respuesta correcta");
                                     pregunta = 0;
                                     break;
                                 }
+                            }
+                            if (pregunta==2)
+                            {
+                                if (e.Result.Text.ToString().Equals("siete"))
+                                {
+                                    VozAna.Speak("Respuesta correcta");
+                                    pregunta = 0;
+                                break;
+                                }
+                            
                             }
                             
                         }

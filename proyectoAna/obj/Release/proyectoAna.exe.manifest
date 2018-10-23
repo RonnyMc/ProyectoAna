@@ -115,14 +115,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="proyectoAna.exe" size="761312">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="proyectoAna.exe" size="761824">
       <assemblyIdentity name="proyectoAna" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>RVc8F+Jk6SOe02+tRZvLWR3vuVNUatVn2PhvmrzAGYc=</dsig:DigestValue>
+        <dsig:DigestValue>gNcve7feDG1igUth5gAiBpmjWvT8aGUrd8jRl31P0Pc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
