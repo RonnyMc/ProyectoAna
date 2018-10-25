@@ -19,9 +19,6 @@ namespace proyectoAna
         SpeechSynthesizer VozAna = new SpeechSynthesizer();
         List<Comandos> Listacomandos = new List<Comandos>();
         string[] CargarFrases;
-        Random aleartorio = new Random();
-        public int numero1 = 0;
-        public int numero2 = 0;
         int c = 0;
         int pregunta = 0;
         public MainWindow()
@@ -41,10 +38,10 @@ namespace proyectoAna
                 VozAna.Speak("Bienvenido a tu nueva asistente virtual, Soy Ana, Me da gusto conocerte");
             }
         }
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void cargarComandos()
         {
-            //Capturar el sonido de la voz por la entrada por defecto del ordenador
-            rec.SetInputToDefaultAudioDevice();
+            Listacomandos = Negocio.CNegocio.Instancia.comandos_ListarAll();
+            CargarFrases = Negocio.CNegocio.Instancia.CargarFrases();
             //Reconoce las palabras que se le indica explicita como parametro en la funcion
             Choices frases = new Choices(CargarFrases);
             //Funcion para construir la gramatica para el reconocedor y reproduccion de voz.
@@ -54,10 +51,25 @@ namespace proyectoAna
             Grammar grammar = new Grammar(grammarBuilder);
             //El reconocedor cargara las gramaticas que hemos construido
             rec.LoadGrammar(grammar);
-            //La sincronizacion del microfono con las palabras a decir siempre esta activa y escuchando.
-            rec.RecognizeAsync(RecognizeMode.Multiple);
-            //Reconoce el patron de frase hablado por el usuario y ejecuta una accion.
-            rec.SpeechRecognized += Rec_SpeechRecognized;
+        }
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                //Capturar el sonido de la voz por la entrada por defecto del ordenador
+                rec.SetInputToDefaultAudioDevice();
+                cargarComandos();
+                //La sincronizacion del microfono con las palabras a decir siempre esta activa y escuchando.
+                rec.RecognizeAsync(RecognizeMode.Multiple);
+                //Reconoce el patron de frase hablado por el usuario y ejecuta una accion.
+                rec.SpeechRecognized += Rec_SpeechRecognized;
+            }
+            catch
+            {
+                VozAna.Speak("Ha ocurrido un error inesperado");
+                MessageBox.Show(" -----> CIERRE EL ASISTENTE, COMPRUEBE SI ESTA INICIALIZADO EL SERVIDOR XAMP, SI ESTA CONECTADO SU MICROFONO O HAY DATOS EN LA BASE DE DATOS, CASO CONTRARIO CONSULTE CON SU PROVEEDOR DEL DISPOSITIVO");
+            }
+           
             //genera un valor al reconocer la voz
             rec.AudioLevelUpdated += Rec_AudioLevelUpdated;
         }
@@ -69,8 +81,8 @@ namespace proyectoAna
         {
             foreach (Comandos com in Listacomandos)
             {
-                //if (e.Result.Confidence > 0.3)
-                //{
+                if (e.Result.Confidence > 0.3)
+                {
                     if (com.Comando.ToString().Equals(e.Result.Text.ToString()))
                     {
                         //VozAna.Speak(com.Respuesta.ToString());
@@ -118,7 +130,7 @@ namespace proyectoAna
                             
                         }
                     }
-                //}
+                }
             }
         }
         private void button_MouseEnter(object sender, MouseEventArgs e)
@@ -172,28 +184,19 @@ namespace proyectoAna
             VozAna.Speak("Cuando me necesites, vuelve a inicializarme, espero haberte ayudado, Adios");
             this.Close();
         }
-
         private void btnConfiguracion_Click(object sender, RoutedEventArgs e)
         {
 
         }
-
         private void btnComandos_Click(object sender, RoutedEventArgs e)
         {
             ConfigInit config = new ConfigInit();
             config.Show();
         }
-
         private void btnActualizar_Click(object sender, RoutedEventArgs e)
         {
-            if (c>0)
-            {
-                MainWindow main = new MainWindow();
-                main.c = 1;
-                main.Show();
-                this.Close();
-                VozAna.Speak("Actualizando datos. Datos Actualizados");
-            }
+            cargarComandos();
+            VozAna.Speak("Actualizando datos. Datos Actualizados");
         }
     }
 }
