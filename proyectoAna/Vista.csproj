@@ -110,10 +110,20 @@
     <Compile Include="ConfigInit.xaml.cs">
       <DependentUpon>ConfigInit.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Cursos.xaml.cs">
+      <DependentUpon>Cursos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VideosTemas.xaml.cs">
+      <DependentUpon>VideosTemas.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Splash.xaml.cs">
       <DependentUpon>Splash.xaml</DependentUpon>
     </Compile>
     <Page Include="ConfigInit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cursos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -129,6 +139,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="VideosTemas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Splash.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -212,6 +226,9 @@
     <Resource Include="Images\Buttons\salir11.png" />
     <Resource Include="Images\Buttons\salir22.png" />
     <Resource Include="Images\System\rectanguloazul.png" />
+    <Resource Include="Images\Sesiones\figuras.png" />
+    <Resource Include="Images\Sesiones\circulo.png" />
+    <Resource Include="Images\Sesiones\triangulo.png" />
     <Content Include="Sound\hearth.wav" />
     <Content Include="Sound\hover.wav" />
   </ItemGroup>

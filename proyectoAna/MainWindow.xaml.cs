@@ -28,14 +28,14 @@ namespace proyectoAna
             visor.Visibility = Visibility.Hidden;
             Listacomandos = Negocio.CNegocio.Instancia.comandos_ListarAll();
             CargarFrases = Negocio.CNegocio.Instancia.CargarFrases();
-            //Bienvenida();
+            Bienvenida();
             c = c + 1;
         }
         private void Bienvenida()
         {
-            if (c==0)
+            if (c == 0)
             {
-                VozAna.Speak("Bienvenido a tu nueva asistente virtual, Soy Ana, Me da gusto conocerte");
+                VozAna.Speak("Ana te da la bienvenida");
             }
         }
         private void cargarComandos()
@@ -69,7 +69,7 @@ namespace proyectoAna
                 VozAna.Speak("Ha ocurrido un error inesperado");
                 MessageBox.Show(" -----> CIERRE EL ASISTENTE, COMPRUEBE SI ESTA INICIALIZADO EL SERVIDOR XAMP, SI ESTA CONECTADO SU MICROFONO O HAY DATOS EN LA BASE DE DATOS, CASO CONTRARIO CONSULTE CON SU PROVEEDOR DEL DISPOSITIVO");
             }
-           
+
             //genera un valor al reconocer la voz
             rec.AudioLevelUpdated += Rec_AudioLevelUpdated;
         }
@@ -90,25 +90,60 @@ namespace proyectoAna
                         if (com.Accion.Trim().Length > 0 && com.Accion != null)
                         {
                             System.Diagnostics.Process.Start(com.Accion.ToString());
-                            VozAna.Speak(com.Respuesta.ToString());
+                            //if (c==2)
+                            //{
+                            //VozAna.Speak(com.Respuesta.ToString());
+                            //c = 1;
+                            //}
+
                         }
                         if (com.Respuesta.Trim().Length > 0)
                         {
-                            if (pregunta==0)
+                            if (pregunta == 0)
                             {
                                 VozAna.Speak(com.Respuesta.ToString());
-                                if (com.Respuesta.ToString().Equals("cuantas figuras geométricas observas en la siguiente imagen"))
+                                if (com.Respuesta.ToString().Equals("cuantas figuras geométricas observas en esta imagen"))
                                 {
                                     pregunta = 1;
                                     break;
                                 }
-                                if (com.Respuesta.ToString().Equals("cuantas figuras geométricas observas en esta imagen"))
+                                if (com.Respuesta.ToString().Equals("cuantas figuras geométricas observas en la siguiente imagen"))
                                 {
                                     pregunta = 2;
                                     break;
                                 }
+                                if (com.Respuesta.ToString().Equals("cuantas figuras geométricas hay en la imagen"))
+                                {
+                                    pregunta = 3;
+                                    break;
+                                }
+                                if (com.Respuesta.ToString().Equals("cuantas figuras geométricas observas ahora aqui"))
+                                {
+                                    pregunta = 4;
+                                    break;
+                                }
+                                if (com.Respuesta.ToString().Equals("cuantas figuras geométricas observas aqui"))
+                                {
+                                    pregunta = 5;
+                                    break;
+                                }
+                                if (com.Respuesta.ToString().Equals("cuantos círculos observan en esta imagen"))
+                                {
+                                    pregunta = 6;
+                                    break;
+                                }
+                                if (com.Respuesta.ToString().Equals("cuantos triángulos observan en esta imagen"))
+                                {
+                                    pregunta = 7;
+                                    break;
+                                }
+                                if (com.Respuesta.ToString().Equals("cuantas figuras geométricas en total observan en esta imagen"))
+                                {
+                                    pregunta = 8;
+                                    break;
+                                }
                             }
-                            if (pregunta==1)
+                            if (pregunta == 1)
                             {
                                 if (e.Result.Text.ToString().Equals("cinco"))
                                 {
@@ -117,17 +152,76 @@ namespace proyectoAna
                                     break;
                                 }
                             }
-                            if (pregunta==2)
+                            if (pregunta == 2)
                             {
                                 if (e.Result.Text.ToString().Equals("siete"))
                                 {
                                     VozAna.Speak("Respuesta correcta");
                                     pregunta = 0;
-                                break;
+                                    break;
                                 }
-                            
+
                             }
-                            
+                            if (pregunta == 3)
+                            {
+                                if (e.Result.Text.ToString().Equals("siete"))
+                                {
+                                    VozAna.Speak("Respuesta correcta");
+                                    pregunta = 0;
+                                    break;
+                                }
+
+                            }
+                            if (pregunta == 4)
+                            {
+                                if (e.Result.Text.ToString().Equals("seis"))
+                                {
+                                    VozAna.Speak("Respuesta correcta");
+                                    pregunta = 0;
+                                    break;
+                                }
+
+                            }
+                            if (pregunta == 5)
+                            {
+                                if (e.Result.Text.ToString().Equals("seis"))
+                                {
+                                    VozAna.Speak("Respuesta correcta");
+                                    pregunta = 0;
+                                    break;
+                                }
+
+                            }
+                            if (pregunta == 6)
+                            {
+                                if (e.Result.Text.ToString().Equals("cuatro"))
+                                {
+                                    VozAna.Speak("Respuesta correcta");
+                                    pregunta = 0;
+                                    break;
+                                }
+
+                            }
+                            if (pregunta == 7)
+                            {
+                                if (e.Result.Text.ToString().Equals("cuatro"))
+                                {
+                                    VozAna.Speak("Respuesta correcta");
+                                    pregunta = 0;
+                                    break;
+                                }
+
+                            }
+                            if (pregunta == 8)
+                            {
+                                if (e.Result.Text.ToString().Equals("siete"))
+                                {
+                                    VozAna.Speak("Respuesta correcta");
+                                    pregunta = 0;
+                                    break;
+                                }
+
+                            }
                         }
                     }
                 }
@@ -186,7 +280,8 @@ namespace proyectoAna
         }
         private void btnConfiguracion_Click(object sender, RoutedEventArgs e)
         {
-
+            Cursos cursos = new Cursos();
+            cursos.Show();
         }
         private void btnComandos_Click(object sender, RoutedEventArgs e)
         {
@@ -195,6 +290,7 @@ namespace proyectoAna
         }
         private void btnActualizar_Click(object sender, RoutedEventArgs e)
         {
+            c = 2;
             cargarComandos();
             VozAna.Speak("Actualizando datos. Datos Actualizados");
         }

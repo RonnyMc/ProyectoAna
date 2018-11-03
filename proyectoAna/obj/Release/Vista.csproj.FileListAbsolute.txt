@@ -37,3 +37,7 @@ A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Release
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Release\Vista.csproj.CopyComplete
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Release\proyectoAna.exe
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Release\proyectoAna.pdb
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Release\Cursos.g.cs
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Release\Cursos.baml
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Release\VideosTemas.g.cs
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\proyectoAna\obj\Release\VideosTemas.baml
