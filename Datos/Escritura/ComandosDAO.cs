@@ -17,8 +17,8 @@ namespace Datos.Escritura
         public static Comandos InsertarComando(Comandos cm)
         {
             MySqlConnection con = Conexion.ObtenerConecction();
-            MySqlCommand cmd = new MySqlCommand(string.Format("INSERT INTO Comandos(comandos, accion, respuesta) " +
-                                            "Values ('{0}', '{1}', '{2}');", cm.Comando, cm.Accion, cm.Respuesta), con);
+            MySqlCommand cmd = new MySqlCommand(string.Format("INSERT INTO Comandos(comandos, accion, respuesta, respuestaPregunta) " +
+                                            "Values ('{0}', '{1}', '{2}', '{3}');", cm.Comando, cm.Accion, cm.Respuesta, cm.RespuestaPregunta), con);
             cmd.ExecuteNonQuery();
             con.Close();
             return cm;
@@ -27,8 +27,8 @@ namespace Datos.Escritura
         {
             MySqlConnection con = Conexion.ObtenerConecction();
             MySqlCommand cmd = new MySqlCommand(string.Format("UPDATE comandos set comandos = '"+comandos.Comando+"', accion = '"
-                                                +comandos.Accion+"', respuesta = '"+comandos.Respuesta+ 
-                                                "' WHERE idComandos = '"+comandos.Id+"'"), con);
+                                                +comandos.Accion+"', respuesta = '"+comandos.Respuesta+"', respuestaPregunta = '"
+                                                +comandos.RespuestaPregunta+"' WHERE idComandos = '"+comandos.Id+"'"), con);
             cmd.ExecuteNonQuery();
             con.Close();
             return comandos;

@@ -20,7 +20,7 @@ namespace Datos.Lectura
             while (dataReader.Read())
             {
                 ListaComandos.Add(new Comandos(dataReader.GetInt32(0), dataReader.GetString(1), dataReader.GetString(2),
-                                               dataReader.GetString(3)));
+                                               dataReader.GetString(3), dataReader.GetString(4)));
             }
             con.Close();
             return ListaComandos;

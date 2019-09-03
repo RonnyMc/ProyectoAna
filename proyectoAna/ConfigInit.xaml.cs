@@ -26,6 +26,7 @@ namespace proyectoAna
     {
         public int count = 1;
         List<Comandos> listacomandos = new List<Comandos>();
+        List<Respuestas> listarespuestas = new List<Respuestas>();
         public ConfigInit()
         {
             InitializeComponent();
@@ -35,19 +36,32 @@ namespace proyectoAna
             txtRespuesta.IsEnabled = false;
             btnAgregar.IsEnabled = false;
             btnEditar.IsEnabled = false;
+            txtRespuestaPregunta.IsEnabled = false;
         }
         public void InsertarComando()
         {
             try
             {
                 Comandos cm = new Comandos();
+                Respuestas resp = new Respuestas();
                 if (count==1)
                 {
                     cm.Accion = txtAccion.Text;
                     cm.Comando = txtComando.Text;
                     cm.Respuesta = txtRespuesta.Text;
+                    cm.RespuestaPregunta = txtRespuestaPregunta.Text;
                     Negocio.CNegocio.Instancia.InsertarComando(cm);
-                    MessageBox.Show("Comando Insertado");
+                    resp.Respuesta = txtRespuestaPregunta.Text;
+                    Negocio.CNegocio.Instancia.InsertarRespuestas(resp);
+                    if (txtRespuestaPregunta.Text == "")
+                    {
+                        MessageBox.Show("Comando Insertado");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Comando y Respuesta Insertados");
+                    }
+
                 }
                 else
                 {
@@ -55,7 +69,11 @@ namespace proyectoAna
                     cm.Comando = txtComando.Text;
                     cm.Respuesta = txtRespuesta.Text;
                     cm.Id = Int32.Parse(txtId.Text);
+                    cm.RespuestaPregunta = txtRespuestaPregunta.Text;
                     Negocio.CNegocio.Instancia.UpdateComando(cm);
+                    resp.Respuesta = txtRespuestaPregunta.Text;
+                    resp.IdComandos = Int32.Parse(txtId.Text);
+                    Negocio.CNegocio.Instancia.UpdateRespuestas(resp);
                     MessageBox.Show("Comando Actualizado");
                 }
             }
@@ -71,6 +89,7 @@ namespace proyectoAna
             txtComando.Text = c.Comando;
             txtRespuesta.Text = c.Respuesta;
             txtId.Text = c.Id.ToString();
+            txtRespuestaPregunta.Text = c.RespuestaPregunta;
         } 
         public void EliminarComando()
         {
@@ -114,6 +133,7 @@ namespace proyectoAna
                 txtRespuesta.Clear();
                 txtId.Clear();
                 txtComando.Clear();
+                txtRespuestaPregunta.Clear();
                 btnAgregar.IsEnabled = true;
                 btnEliminar.IsEnabled = true;
                 btnNuevo.IsEnabled = true;
@@ -155,11 +175,13 @@ namespace proyectoAna
             txtAccion.IsEnabled = true;
             txtComando.IsEnabled = true;
             txtRespuesta.IsEnabled = true;
+            txtRespuestaPregunta.IsEnabled = true;
             btnAgregar.IsEnabled = true;
             txtAccion.Clear();
             txtRespuesta.Clear();
             txtId.Clear();
             txtComando.Clear();
+            txtRespuestaPregunta.Clear();
             btnAgregar.Content = "Agregar";
         }
 
@@ -169,6 +191,7 @@ namespace proyectoAna
             txtAccion.IsEnabled = true;
             txtComando.IsEnabled = true;
             txtRespuesta.IsEnabled = true;
+            txtRespuestaPregunta.IsEnabled = true;
             btnAgregar.IsEnabled = true;
             btnEliminar.IsEnabled = false;
             btnAgregar.Content = "Modificar";
@@ -178,6 +201,7 @@ namespace proyectoAna
             txtAccion.IsEnabled = false;
             txtComando.IsEnabled = false;
             txtRespuesta.IsEnabled = false;
+            txtRespuestaPregunta.IsEnabled = false;
             btnAgregar.IsEnabled = true;
             txtAccion.Clear();
             txtRespuesta.Clear();

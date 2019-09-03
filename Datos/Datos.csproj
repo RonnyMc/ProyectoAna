@@ -57,13 +57,17 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="Escritura\ComandosDAO.cs" />
+    <Compile Include="Escritura\RespuestasDAO.cs" />
     <Compile Include="Lectura\ComandoDAS.cs" />
+    <Compile Include="Lectura\RespuestasDAS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Entidades\Entidades.csproj">
       <Project>{d8ce909b-da0a-4452-95fe-6e27ee9b5ae9}</Project>

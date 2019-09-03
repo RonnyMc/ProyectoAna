@@ -9,3 +9,14 @@ A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Entidades\bin\Debug\Goo
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Entidades\bin\Debug\MySql.Data.xml
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Entidades\obj\Debug\Entidades.csproj.CopyComplete
 A:\TRABAJOS DE RONNY\Proyectos Visual Studio\proyectoAna\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\anaHolographicVersionMichigan\Entidades\bin\Debug\Entidades.dll
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\anaHolographicVersionMichigan\Entidades\bin\Debug\Entidades.pdb
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\anaHolographicVersionMichigan\Entidades\bin\Debug\Google.Protobuf.dll
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\anaHolographicVersionMichigan\Entidades\bin\Debug\MySql.Data.dll
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\anaHolographicVersionMichigan\Entidades\bin\Debug\Google.Protobuf.xml
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\anaHolographicVersionMichigan\Entidades\bin\Debug\MySql.Data.xml
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\anaHolographicVersionMichigan\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\anaHolographicVersionMichigan\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\anaHolographicVersionMichigan\Entidades\obj\Debug\Entidades.csproj.CopyComplete
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\anaHolographicVersionMichigan\Entidades\obj\Debug\Entidades.dll
+A:\TRABAJOS DE RONNY\Proyectos Visual Studio\anaHolographicVersionMichigan\Entidades\obj\Debug\Entidades.pdb

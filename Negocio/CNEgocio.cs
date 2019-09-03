@@ -54,5 +54,24 @@ namespace Negocio
         }
 
         #endregion
+
+        #region Respuestas
+        public List<Respuestas> respuestas_ListarAll()
+        {
+            return RespuestasDAS.LlenarListaRespuestas();
+        }
+        public string[] CargarFrasesRespuestas()
+        {
+            return RespuestasDAS.CargarFrasesRespuestas();
+        }
+        public Respuestas InsertarRespuestas(Respuestas resp)
+        {
+            return RespuestasDAO.InsertarRespuesta(resp);
+        }
+        public Respuestas UpdateRespuestas(Respuestas resp)
+        {
+            return RespuestasDAO.UpdateRespuestas(resp);
+        }
+        #endregion
     }
 }
